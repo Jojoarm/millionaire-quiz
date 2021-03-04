@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Want's to be a Millionaire by Jojo Armani</title>
+    <link rel="stylesheet" href="quiz-style.css">
+    <script src='quiz-script.js'defer></script>
+</head>
+<body>
+    <audio id="start-sound">   
+        <source src="audio/gamestart.mp3"/>   
+    </audio> 
+    <audio id="end-sound">   
+        <source src="audio/gameover.mp3"/>   
+    </audio> 
+    <audio id="question-sound">   
+        <source src="audio/question.mp3"/>   
+    </audio> 
+    <audio id="phone-sound">   
+        <source src="audio/phone.mp3"/>   
+    </audio> 
+    <audio id="play-sound">   
+        <source src="audio/inplay.mp3"/>   
+    </audio> 
+    <audio id="audience-sound">   
+        <source src="audio/audience.mp3"/>   
+    </audio> 
+    <audio id="fifty-sound">   
+        <source src="audio/fifty.mp3"/>   
+    </audio> 
+    <audio id="correct-sound">   
+        <source src="audio/correct.mp3"/>   
+    </audio> 
+    <audio id="failed-sound">   
+        <source src="audio/failed.mp3"/>   
+    </audio> 
+    <div class="start-page" id='start-page'>
+        <div class="logo" id="logo"></div>
+        <div class='writeup'>
+            <div class="title">Welcome to</div>
+            <div class="game-title">Who Wants To Be A Millionaire By Jojo Armani</div>
+        </div>
+        <button class="play" id="play">PLAY</button>
+    </div>
+    <div class="play-game hide" id='play-game'>
+        <div class="game-section" id="game-section">
+            <div class="life-line" id="life-line">
+                <button class="fifty" id="fifty"></button>
+                <button class="audience" id="audience"></button>
+                <button class="phone" id="phone"></button>
+            </div>
+            <div class='alert' id='alert'></div>
+            <div class='audience-vote' id='audience-vote'>
+                <div class="a" id="a">A</div>
+                <div class="b" id="b">B</div>
+                <div class="c" id="c">C</div>
+                <div class="d" id="d">D</div>
+            </div>
+            <div class="question" id="question">Question</div>
+            <div class="answer" id="answer">
+                
+            </div>
+            <div class="controls">
+                <button class="next-btn btn hide" id="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="winning-section" id="winning-section">
+            <div class="won" id='won'><div class='circle'></div><p>$1 Million</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$500,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$250,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$125,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$64,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$32,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$16,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$8,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$4,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$2,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$1,000</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$500</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$300</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$200</p></div>
+            <div class="won" id='won'><div class='circle'></div><p>$100</p></div>
+        </div>
+    </div>
+    <div class="game-end hide" id='game-end'>
+        <div class='show-winnings' id='show-winnings'>Game Over!</div>
+        <button class="restart-btn btn" id="restart-btn">Play Again</button>
+    </div>
+</body>
+</html>
